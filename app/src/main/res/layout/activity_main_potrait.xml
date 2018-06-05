@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgBtn_add_top"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_5"
+        android:src="@drawable/ic_add_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_add_bottom"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_5"
+        android:src="@drawable/ic_add_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_fav"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp_5"
+        android:src="@drawable/ic_favorite_border_black_24dp" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_favs"
+        android:text="View Favs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_shuffle"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dp_5"
+        android:src="@drawable/ic_shuffle_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
